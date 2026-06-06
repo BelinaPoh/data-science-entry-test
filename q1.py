@@ -1,16 +1,22 @@
-    """
+"""
     Task 1
     - Create a function that would swap the value of x and y using only x and y as variables.
     - x and y must be numeric.
     - Return -1 if x and y is not numeric, and
     - print the swapped values if both x and y are numeric.
-    """
+"""
+# Create a swap function of x and y
+# Return -1 if x and y is not numeric
 def swap(x, y):
-  while x != int, float, complex and y != int, float, complex:
+  if not (isinstance(x, (int, float)) and isinstance(y, (int, float))):
     return -1
-    break;
-
-swap(x, y) 
+      
+  # swap values of x and y
+  x,y = y,x
+  
+  # print the swapped values if both x and y are numeric
+  print(x)
+  print(y)
 
 
 # Task 2
